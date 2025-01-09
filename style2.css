@@ -1,0 +1,267 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+
+ 
+  
+.header {
+  /* position:fixed;
+  top:0;
+  left:0; */
+  width:100%;
+  padding:20px 100px;
+  background: transparent;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:100;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a {
+  position: relative;
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+margin-left: 40px;
+}
+
+.navbar a::before {
+  content: '';
+  position:absolute ;
+  top:100%;
+  left:0;
+  width:0%;
+  height: 2px;
+  background: #fff;
+  transition: .3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.frame{
+  /* position:absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  width: 300px;
+  height: 400px;
+  background: #d4d7dd;
+  border: 55px soild #fff;
+  box-shadow : 0 0 21px 3px rgba(0, 0, 0, 0.5) inset, 0 15px 54px 10px rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  border-radius: 12px;
+}
+ 
+/* img {
+  position:absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  border: 3px solid #d4d7dd;
+} */
+.caption{
+  color: #f1d3d3;
+  font-family:"Dosis", sans-serif ;
+  /* width: 800px; */
+  text-wrap: wrap;
+  padding: 20px 0 0 20px;
+}
+/* .carouselslide {
+  display: block;
+
+} */
+
+.firstBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  background-color: white;
+  padding:30px;
+  height: 400px;
+}
+
+.height-500-px {
+  height: 400px;
+  padding: 30px 30px;
+} 
+ul li ul.dropdown li {
+display: block;
+}
+
+ul li ul.dropdown {
+width: 100%;
+/* background: #22438c; */
+ position:fixed; 
+z-index: 999;
+display: none;
+}
+ul li a:hover {
+background: transparent;
+}
+ul li:hover ul.dropdown {
+display:block;
+}
+ul {
+list-style: none;
+}
+ul li {
+display: inline-block;
+position: relative;
+}
+/* p{
+top: 30%;
+color: #df2f32;
+} */
+/* .legend {
+color: #fff;
+} */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+width: 100%; /* Full width */
+padding: 12px; /* Some padding */ 
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+background-color: #699897;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+background-color: grey;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+border-radius: 5px;
+background-color: #f1d3d3;
+padding: 20px;
+}
+h1 {
+color: #f1d3d3;
+}
+h3 {
+color: #f1d3d3;
+}
+.text-box {
+color: #f1d3d3;
+font-size: 100px;
+font-family:"Dosis", sans-serif ;
+/* position: absolute;
+left: 10%; */
+}
+span {
+display: inline-block;
+animation: mover 6s linear infinite;
+}
+@keyframes mover{
+0%{
+  text-shadow: 0 0 30px rgba(0,0,0,0);
+}
+50%{
+  text-shadow: 0 0 30px rgba(0,0,0,0.30);
+  transform: translateY(30px)
+}
+100%{
+  text-shadow: 0 0 30px rgba(0,0,0,0);
+}
+}
+.Tin {
+color: white;
+  font-family:"Dosis", sans-serif ;
+  /* width: 600px; */
+  /* text-wrap: wrap; */
+  padding: 150px 0 0px 10px;
+}
+.other {
+  color: white;
+    font-family:"Dosis", sans-serif ;
+    font-size: 50px;
+    /* width: 600px; */
+    text-wrap: wrap;
+    padding: 50px 0 0 0px;
+
+}
+footer{
+color: #f1d3d3;
+margin-top: 300px;
+}
+ul {
+color: #f1d3d3;
+}
+
+body{ 
+  
+background-color: #699897;
+}
+
+@media(min-width:319px) and (max-width:480px){
+body { 
+background-color: #699897;
+}
+}
+@media(min-width:481px) and (max-width:1200px){
+body { 
+background-color: #699897;
+}
+}
+@media(min-width:1201px) and (max-width:1600px){
+body { 
+background-color: #699897;
+}
+}@media(min-width:1601px){
+body { 
+background-color: #699897;
+}
+}
+/* For text */
+/* @media(min-width:319px) and (max-width:480px) {
+p { 
+font-size: 10px;
+width: 200px;
+}
+} */
+/* @media(min-width:481px) and (max-width:1200px){
+body { 
+background-color:black;
+}
+}
+@media(min-width:1201px) and (max-width:1600px){
+body { 
+background-color:black;
+}
+}@media(min-width:1601px){
+body { 
+background-color:black;
+}
+} */
+audio {
+padding: 20px 0 0 20px;
+}
